@@ -1,6 +1,6 @@
 # 👨‍💻Sobre o projeto
 
-Essa Api permite com que você faça consultas a um banco de dados que contém todos os 822
+Essa API permite com que você faça consultas a um banco de dados que contém todos os 822
 pokémons do jogo Pokémon GO.
 
 O projeto foi inspirado em um desafio técnico da [RedFox Tech](https://github.com/RedFoxTech/vaga-backend-teste)
@@ -8,7 +8,32 @@ e também nesse site: https://pokemon.gameinfo.io/en/pokemon/.
 
 ## 💿Como rodar na sua máquina
 
-**Pré requisitos:** Git e Java 17
+### Pré-requisitos
+
+- **Git**;
+- **Docker + Docker-Compose (caso queira utilizar Docker)**;
+- **Java 17 (caso queira utilizar o Maven)**
+
+<details>
+    <summary><b style="font-size:1.4em;">🐳Utilizando Docker</b></summary>
+
+```shell
+# Clone o repositório na sua máquina
+$ git clone https://github.com/lleonardus/pokemon-go.git
+
+# Abra a pasta do projeto
+$ cd pokemon-go
+
+# Inicie o projeto usando Docker
+$ docker-compose up
+```
+
+Após esse processo, a API vai estar rodando em **http://localhost:8080**.
+
+</details>
+
+<details>
+    <summary><b style="font-size:1.4em;">♨️Utilizando Maven</b></summary>
 
 ``` shell
 # Clone o repositório na sua máquina
@@ -17,11 +42,15 @@ $ git clone https://github.com/lleonardus/pokemon-go.git
 # Abra a pasta do projeto
 $ cd pokemon-go
 
-# Inicie o projeto
+# Inicie o projeto usando Maven
 $ ./mvnw spring-boot:run
 ```
-Após esse processo, a api vai estar rodando em **http://localhost:8080** e o banco de dados (H2 database)
-pode ser acessado em **http://localhost:8080/h2-console/**.
+
+Após esse processo, a API vai estar rodando em **http://localhost:8080**
+e o banco de dados (H2 database) pode ser acessado em **http://localhost:8080/h2-console/**
+
+</details>
+
 
 ## 🎯Endpoints
 
