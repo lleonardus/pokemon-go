@@ -3,6 +3,7 @@ package com.leonardus.pokemongo.controller.filter;
 import com.leonardus.pokemongo.entity.Pokemon;
 import jakarta.persistence.criteria.Predicate;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.jpa.domain.Specification;
@@ -13,6 +14,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class PokemonParams {
     private String name;
     private String type;
