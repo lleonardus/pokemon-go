@@ -1,9 +1,9 @@
 # 👨‍💻Sobre o projeto
 
-Essa API permite com que você faça consultas dinâmicas a um banco de dados que contém todos os 822
+Essa API permite fazer consultas dinâmicas a um banco de dados que contém todos os 822
 pokémons do jogo Pokémon GO.
 
-O projeto foi inspirado em um desafio técnico da [RedFox Tech](https://github.com/RedFoxTech/vaga-backend-teste)
+O projeto foi inspirado num desafio técnico da [RedFox Tech](https://github.com/RedFoxTech/vaga-backend-teste)
 e também nesse site: https://pokemon.gameinfo.io/en/pokemon/.
 
 ## 💿Como rodar na sua máquina
@@ -12,7 +12,7 @@ e também nesse site: https://pokemon.gameinfo.io/en/pokemon/.
 
 - **Git**;
 - **Docker + Docker-Compose (caso queira utilizar Docker)**;
-- **Java 17 (caso queira utilizar o Maven)**
+- **Java 17 + Maven (caso queira utilizar o Maven)**
 
 <details>
     <summary><b style="font-size:1.4em;">🐳Utilizando Docker</b></summary>
@@ -44,7 +44,7 @@ $ git clone https://github.com/lleonardus/pokemon-go.git
 $ cd pokemon-go
 
 # Inicie o projeto usando Maven
-$ ./mvnw spring-boot:run
+$ mvn spring-boot:run
 ```
 
 Após esse processo, a API vai estar rodando em **http://localhost:8080**,
@@ -53,6 +53,8 @@ e o banco de dados (H2 database) poderá ser acessado em **http://localhost:8080
 
 </details>
 
+Obs: Caso não queira utilizar nenhumas das opções acima, ainda é possível rodar o projeto utilizando uma IDE da
+sua preferência (Intellij, Eclipse...) 
 
 ## 🎯Endpoints
 
